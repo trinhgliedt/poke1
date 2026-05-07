@@ -1,5 +1,5 @@
 import { useEffect, useState, useRef } from 'react';
-import { BrowserRouter, Routes, Route} from 'react-router-dom';
+import { HashRouter, Routes, Route} from 'react-router-dom';
 import './App.css'
 import PokeHome from './PokeHome';
 import MyPokemonCollection from './pages/MyPokemonCollection';
@@ -183,7 +183,7 @@ function App() {
   return (
     <div className={`app-container ${theme}`}>
       <div className="content-container">
-      <BrowserRouter>
+      <HashRouter>
         <Navbar {...{theme, setTheme, pokeList, searchStr, setSearchStr, setActivePage, abilityFilter, setAbilityFilter, typeFilter, setTypeFilter, sortType, setSortType, nameSort, setNameSort, xpSort, setXpSort, heightSort, setHeightSort, weightSort, setWeightSort, abilityFilters, typeFilters}}/>
         <Routes>
           <Route path="/" element={<PokeHome />} />
@@ -191,7 +191,7 @@ function App() {
           <Route path="/pokemon-list" element={<PokemonList { ...{ pokeList, loading, allPokemonDetailsLoaded, itemsPerPage, searchStr, activePage, setActivePage, abilityFilter, typeFilter, setAbilityFilters, setTypeFilters, sortType, nameSort, xpSort, heightSort, weightSort } }/>} />
           <Route path="/pokemon/:id" element={<PokemonDetail />} />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
       </div>
     </div>
   )
