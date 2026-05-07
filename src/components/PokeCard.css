@@ -1,0 +1,82 @@
+a.poke-card {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    text-decoration: none;
+}
+
+@media (min-width: 1024px) {
+    a.poke-card {
+        min-width: calc((100% - 80px)/5);
+        max-width: calc((100% - 80px)/5);
+    }
+}
+.poke-card__name {
+    text-transform: capitalize;
+    font-size: 28px;
+    font-family: 'Kalam-Regular', sans-serif;
+    opacity: 0.7;
+    margin-top: 10px;
+    margin-bottom: 3px;
+}
+
+.poke-card:hover .poke-card__name {
+    opacity: 1;
+    text-decoration: underline;
+}
+
+.poke-card img {
+    min-height: 200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.poke-card__info {
+    font-size: 14px;
+    font-family: system-ui, "Segoe UI", Roboto, sans-serif;
+}
+
+.poke-card__info__label {
+    color: #210303;
+}
+
+.app-container.dark .poke-card__info__label {
+    color: #c4bfbf;
+}
+
+.poke-card__info__xp,
+.sort-direction.xp {
+    font-size: 18px;
+    color: red;
+    text-shadow: 0 0 1px #f71b0cff;
+}
+
+.app-container.dark .poke-card__info__xp,
+.app-container.dark .sort-direction.xp {
+    font-size: 18px;
+    color: #d00505;
+    text-shadow: 0 0 1px #f71b0cff;
+}
+
+.poke-card__info__weight,
+.sort-direction.weight {
+    color: #707008;
+    text-shadow: 0 0 1px red;
+}
+
+.app-container.dark .poke-card__info__weight,
+.app-container.dark .sort-direction.weight {
+    color: yellow;
+    text-shadow: 0 0 1px #10100dff;
+}
+
+.poke-card__info__height,
+.sort-direction.height {
+    color: #6f02f5fe;
+    text-shadow: 0 0 1px #ff0303ff;
+}
+
+.app-container.dark .poke-card__info__height,
+.app-container.dark .sort-direction.height {
+    color: #fe7a06fe;
+    text-shadow: 0 0 1px #ffff16ff;
+}

@@ -1,0 +1,11 @@
+.poke-list-page {
+    display: none;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+    padding: 30px 0;
+}
+
+.poke-list-page.active {
+    display: flex;
+}

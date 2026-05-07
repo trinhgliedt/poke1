@@ -1,0 +1,109 @@
+
+.search--wrap {
+    position: relative;
+    z-index: 0;
+}
+.filter-label {
+    font-size: 16px;
+}
+.search--wrap input,
+.filter-select {
+    border-radius: 3px;
+    padding: 5px;
+    background: var(--form-bg);
+    border: 1px solid var(--border--gradient--accent);
+    color: var(--text);
+    position: relative;
+    z-index: 0;
+}
+
+.app-container.dark .search--wrap input {
+    background: #032b2f;
+    color: var(--text--dark);
+}
+.search--close {
+    position: absolute;
+    right: 6px;
+    top: 8px;
+    z-index: 1;
+    width: 13px;
+    height: 13px;
+}
+
+.search--close.hide {
+    display: none;
+}
+
+.search--close span {
+    display: inline-block;
+    position: relative;
+    top: -7px;
+    width: 2px;
+    height: 16px;
+    background: var(--border--gradient--accent);
+}
+
+.app-container.dark  .search--close span {
+    background: var(--border);
+}
+.search--close .first {
+    transform: rotate(45deg);
+    right: -1px;
+}
+.search--close .second {
+    transform: rotate(135deg);
+    right: 1px;
+}
+.ssf-icon {
+    width: 35px;
+    height: 35px;
+}
+.ssf-trigger {
+    display: flex;
+    margin-right: 0;
+    margin-left: auto;
+    align-items: center;
+}
+
+.search-sort-filter--dropdown {
+    padding: 5px 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.search-sort-filter--dropdown.hide {
+    display: none;
+}
+
+.search-sort-filter--dropdown > div {
+    display: flex;
+    justity-content: left;
+    gap: 10px;
+}
+
+.sort--wrap .sort-cta {
+    margin-right: 3px;
+}
+
+.sort--wrap button {
+    text-transform: none;
+    font-family: system-ui, "Segoe UI", Roboto, sans-serif;
+    font-size: 16px;
+    text-decoration: none;
+}
+.sort--wrap button:hover .sort-cta {
+    text-decoration: underline;
+}
+.sort--wrap .sort-direction {
+    display: inline-block;
+    min-width: 13px;
+}
+
+.sort--wrap .sort-direction.none,
+.sort--wrap .sort-direction.inactive {
+    opacity: 0.4;
+}
+.sort--wrap .sort-cta.name ~ .sort-direction {
+    min-width: 35.5px;
+}

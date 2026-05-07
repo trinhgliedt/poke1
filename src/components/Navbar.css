@@ -1,0 +1,46 @@
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+    align-items: flex-start;
+    margin-top: 20px;
+}
+.navbar--right {
+    display: flex;
+    justify-content: flex-end;
+    gap: 20px;
+    align-items: flex-start;
+}
+
+.navbar--logo img:hover {
+    transition: transform 0.3s ease-in-out;
+    transform: scale(1.1);
+}
+
+.navbar--right a,
+.navbar--right button {
+    font-family: 'Kalam-Light', sans-serif;
+    font-size: 20px;
+    opacity: 0.7;
+    color: var(--link--gradient);
+}
+.navbar--right a {
+    margin-top: 3px;
+}
+.navbar--right button {
+    text-decoration: underline;
+    padding: 0;
+    text-transform: capitalize;
+    text-decoration-thickness: 1px;
+}
+.navbar--right  a:hover,
+.navbar--right  button:hover {
+    opacity: 1;
+}
+
+.navbar--right button.clear-filter {
+    font-weight: 600;
+    font-size: 14px;
+    text-decoration: none;
+    font-family: 'Kalam-Regular', sans-serif;
+}
