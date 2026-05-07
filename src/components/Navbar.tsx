@@ -54,7 +54,7 @@ export default function Navbar(props: NavbarProps) {
     return (
         <div className="navbar">
             <span className="navbar--left">
-            <Link to="/" className="navbar--logo"><img src="/main-logo.webp" alt="Pikachu" width="70px"/></Link>
+            <Link to="/" className="navbar--logo"><img src={`${import.meta.env.BASE_URL}main-logo.webp`} alt="Pikachu" width="70px"/></Link>
             </span>
             <span className="navbar--right">
             {isPokemonListPage &&
